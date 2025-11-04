@@ -5,4 +5,6 @@ module com.example.zoomanagementass3 {
 
     opens com.example.zoomanagementass3 to javafx.fxml;
     exports com.example.zoomanagementass3;
+    exports com.example.zoomanagementass3.Controllers;
+    opens com.example.zoomanagementass3.Controllers to javafx.fxml;
 }
