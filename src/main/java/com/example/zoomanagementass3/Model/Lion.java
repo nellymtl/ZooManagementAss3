@@ -1,4 +1,15 @@
 package com.example.zoomanagementass3.Model;
 
-public class Lion {
+/**
+ * Lion species model.
+ */
+public class Lion extends BigCat {
+    public Lion(String name, int age) {
+        super(name, age);
+    }
+
+    @Override
+    public String getSpecies() {
+        return "Lion";
+    }
 }
