@@ -6,6 +6,12 @@ import javafx.collections.ObservableList;
 import java.util.Objects;
 import java.util.Optional;
 
+/**
+ * Represents a leaf enclosure containing animals.
+ * Provides CRUD style operations on its animal collection.
+ *
+ * @author Ian
+ */
 public class Enclosure {
     private final String name;
     private final ObservableList<Animal> animals = FXCollections.observableArrayList();

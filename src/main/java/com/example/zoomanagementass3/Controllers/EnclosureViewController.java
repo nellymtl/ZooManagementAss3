@@ -17,6 +17,12 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * Controller for the enclosure view handling display and user actions
+ * related to animals within a single enclosure.
+ *
+ * @author Ian
+ */
 public class EnclosureViewController {
     @FXML
     private Label enclosureLabel;

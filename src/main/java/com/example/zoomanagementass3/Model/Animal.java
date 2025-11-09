@@ -5,6 +5,8 @@ import java.util.Objects;
 /**
  * Base model for all animals in the zoo.
  * Holds common properties and display helpers used by the UI layer.
+ *
+ * @author Ian
  */
 public class Animal {
     private String name;
