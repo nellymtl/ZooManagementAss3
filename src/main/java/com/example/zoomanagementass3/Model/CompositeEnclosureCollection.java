@@ -2,9 +2,9 @@ package com.example.zoomanagementass3.Model;
 
 public class CompositeEnclosureCollection implements AnimalCollection {
 
-}
 
-public addCollection() {
+    public void addCollection() {
 
 
+    }
 }
