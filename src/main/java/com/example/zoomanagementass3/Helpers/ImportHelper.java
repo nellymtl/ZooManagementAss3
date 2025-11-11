@@ -1,6 +1,10 @@
 package com.champlain.oop2.demo.Helpers;
 
 import com.champlain.oop2.demo.Model.*;
+import com.example.zoomanagementass3.Model.Cougar;
+import com.example.zoomanagementass3.Model.Enclosure;
+import com.example.zoomanagementass3.Model.Lion;
+import com.example.zoomanagementass3.Model.Tiger;
 
 /**
  * The {@code ImportHelper} class is a utility class responsible for
