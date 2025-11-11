@@ -1,4 +1,5 @@
 package com.example.zoomanagementass3.Controllers;
 
-public class CompositeAnimalCollectionViewController {
-}
+import com.example.zoomanagementass3.Model.CompositeAnimalCollection;
+
+
