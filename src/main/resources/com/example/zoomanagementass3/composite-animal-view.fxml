@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.zoomanagementass3.Controllers.CompositeEnclosureCollectionViewController"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zoomanagementass3.Controllers.CompositeEnclosureViewCollectionControllers">
+   <children>
+      <Button onAction="#onBackButtonClick" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" text="Back" />
+      <Label layoutX="260.0" layoutY="82.0" text="Big Cats">
+         <font>
+            <Font name="Bell MT" size="23.0" />
+         </font></Label>
+      <Button onAction="#onLionsButtonClick" layoutX="172.0" layoutY="160.0" mnemonicParsing="false" text="Lions" />
+      <Button  onAction="#onTigersButtonClick" layoutX="256.0" layoutY="160.0" mnemonicParsing="false" text="Tigers" />
+      <Button  onAction="#onCougarsButtonClick" layoutX="346.0" layoutY="160.0" mnemonicParsing="false" text="Cougars" />
 
+   </children>
 </AnchorPane>
