@@ -3,6 +3,7 @@ package com.example.zoomanagementass3.Model;
 import javafx.fxml.FXML;
 
 import java.lang.classfile.Label;
+import java.util.List;
 
 public class CompositeEnclosureCollection implements EnclosureCollection {
 
@@ -14,13 +15,11 @@ public class CompositeEnclosureCollection implements EnclosureCollection {
 
     }
 
-
     public void addCollection(Enclosure tigerHabitat) {
 
-        CompositeEnclosureCollection tigers =  new CompositeEnclosureCollection("Tigers");
+        //CompositeEnclosureCollection tigers =  new CompositeEnclosureCollection("Tigers");
     }
-
-    public void addCollection(CompositeEnclosureCollection tigers) {
+    public static void addCollection(CompositeEnclosureCollection tigers) {
 
     }
 

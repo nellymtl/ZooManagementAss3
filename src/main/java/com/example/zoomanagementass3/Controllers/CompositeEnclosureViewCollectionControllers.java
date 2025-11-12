@@ -1,10 +1,8 @@
 package com.example.zoomanagementass3.Controllers;
 
-import com.example.zoomanagementass3.Model.CompositeEnclosureCollection;
 import com.example.zoomanagementass3.Model.EnclosureCollection;
 import com.example.zoomanagementass3.ZooApplication;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -12,15 +10,14 @@ import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class CompositeEnclosureViewCollectionControllers {
 
-    public ListView BigCatsListView;
 
+    public ListView EnclosureCollection;
     private List<EnclosureCollection> aCollection = new ArrayList<EnclosureCollection>();
 
 
@@ -41,9 +38,7 @@ public class CompositeEnclosureViewCollectionControllers {
         nextStage.showAndWait();
     }
 
-    public static class setaCollection {
-        public setaCollection(CompositeEnclosureCollection myCollection) {
 
-        }
+    public void setaCollection(List<EnclosureCollection> aCollection) {
     }
 }

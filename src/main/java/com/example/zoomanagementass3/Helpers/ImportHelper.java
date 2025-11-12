@@ -89,7 +89,7 @@ public class ImportHelper {
         // --- Composite for all big cats ---
         CompositeEnclosureCollection bigCats = new CompositeEnclosureCollection("Big Cats");
         bigCats.addCollection(lions);
-        bigCats.addCollection(tigers);
+        CompositeEnclosureCollection.addCollection(tigers);
         bigCats.addCollection(cougarsEnclosure);
 
         // Return the complete composite structure
