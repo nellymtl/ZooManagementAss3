@@ -12,7 +12,7 @@ import java.util.Optional;
  *
  * @author Ian
  */
-public class Enclosure {
+public class Enclosure implements EnclosureCollection {
     private final String name;
     private final ObservableList<Animal> animals = FXCollections.observableArrayList();
 

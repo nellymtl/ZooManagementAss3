@@ -1,6 +1,5 @@
-package com.champlain.oop2.demo.Helpers;
+package com.example.zoomanagementass3.Helpers;
 
-import com.champlain.oop2.demo.Model.*;
 import com.example.zoomanagementass3.Model.*;
 
 /**

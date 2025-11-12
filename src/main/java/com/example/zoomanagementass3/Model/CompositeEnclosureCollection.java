@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 
 import java.lang.classfile.Label;
 
-public class CompositeEnclosureCollection implements  AnimalCollection {
+public class CompositeEnclosureCollection implements EnclosureCollection {
 
     @FXML
     private Label label;
@@ -14,10 +14,16 @@ public class CompositeEnclosureCollection implements  AnimalCollection {
 
     }
 
+
     public void addCollection(Enclosure tigerHabitat) {
 
         CompositeEnclosureCollection tigers =  new CompositeEnclosureCollection("Tigers");
     }
+
+    public void addCollection(CompositeEnclosureCollection tigers) {
+
+    }
+
 }
 
 
