@@ -5,7 +5,7 @@ package com.example.zoomanagementass3.Model;
  *
  * @author Ian
  */
-public class Tiger extends BigCat {
+public class Tiger extends Animal {
     public Tiger(String name, int age) {
         super(name, age);
     }
