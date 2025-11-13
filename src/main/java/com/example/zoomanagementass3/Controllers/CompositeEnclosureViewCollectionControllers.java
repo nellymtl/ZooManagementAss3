@@ -1,5 +1,6 @@
 package com.example.zoomanagementass3.Controllers;
-
+import com.example.zoomanagementass3.Helpers.ImportHelper;
+import com.example.zoomanagementass3.Model.CompositeEnclosureCollection;
 import com.example.zoomanagementass3.Model.EnclosureCollection;
 import com.example.zoomanagementass3.ZooApplication;
 import javafx.event.ActionEvent;
@@ -17,14 +18,25 @@ import java.util.List;
 public class CompositeEnclosureViewCollectionControllers {
 
 
-    public ListView EnclosureCollection;
+    public ListView<CompositeEnclosureCollection> EnclosureCollection;
     private List<EnclosureCollection> aCollection = new ArrayList<EnclosureCollection>();
+
+    public  void initialize(){
+        CompositeEnclosureCollection myCollection = ImportHelper.createAnimals();
+        EnclosureCollection = new ListView();
+         //CompositeEnclosureViewCollectionControllers controller = fxmlLoader.getController();
+        CompositeEnclosureViewCollectionControllers controller = null;
+        controller.setaCollection((List<EnclosureCollection>) myCollection);
+
+    }
+
 
 
     public void onBackButtonClick(ActionEvent actionEvent) {
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.close();
     }
+    // Test
 
     public void onOpenButtonClick(ActionEvent pEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(ZooApplication.class.getResource("enclosure-view.fxml"));
@@ -40,5 +52,6 @@ public class CompositeEnclosureViewCollectionControllers {
 
 
     public void setaCollection(List<EnclosureCollection> aCollection) {
+        this.aCollection = aCollection;
     }
 }

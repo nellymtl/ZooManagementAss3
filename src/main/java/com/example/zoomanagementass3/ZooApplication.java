@@ -17,11 +17,7 @@ public class ZooApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(ZooApplication.class.getResource("composite-animal-view.fxml"));
         Parent view = fxmlLoader.load();
-        CompositeEnclosureCollection myCollection = ImportHelper.createAnimals();
-        CompositeEnclosureViewCollectionControllers controller = fxmlLoader.getController();
-        controller.setaCollection((List<EnclosureCollection>) myCollection);
         Scene scene = new Scene(view, 400, 400);
-
         stage.setTitle("Zoo Management");
         stage.setScene(scene);
         stage.show();
